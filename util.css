@@ -1,0 +1,73 @@
+.my3dDiv {
+    background: #222;
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow:
+        0 8px 24px rgba(0,0,0,0.3),   /* deep shadow */
+        0 1.5px 4px rgba(255,255,255,0.08) inset; /* subtle inner highlight */
+    /* transform: perspective(900px) rotateY(8deg); */
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+.my3dDiv:hover {
+    box-shadow:
+        0 16px 48px rgba(0,0,0,0.5),
+        0 1.5px 4px rgba(227, 192, 64, 0.834) inset;
+    /* transform: perspective(600px) rotateY(0deg) scale(1.03); */
+}
+
+.flex {
+    display: flex;
+    gap: 50px;
+    padding: 20px;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+     box-shadow:
+        0 8px 24px rgba(0,0,0,0.3),   /* deep shadow */
+        0 1.5px 4px rgba(255,255,255,0.08) inset; /* subtle inner highlight */
+}
+
+@media (max-width: 900px) {
+    .hamburger {
+        display: block;
+    }
+    .heading {
+        display: none;
+        width: 90%;
+    }
+    .flex {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .picture {
+        width: 50%;
+        height: -webkit-fill-available;
+        overflow: scroll;
+    }
+    .about {
+        width: 80%;
+        height: -webkit-fill-available;
+        overflow: scroll;
+    }
+}
+
+@media (max-width: 650px) {
+    .flex {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .picture {
+        width: 80%;
+        height: -webkit-fill-available;
+        overflow: scroll;
+    }
+    .about {
+        width: 80%;
+        height: -webkit-fill-available;
+        overflow: scroll;
+    }
+}
+
+
+
